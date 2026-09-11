@@ -1,0 +1,38 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/command",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/_next/:path*",
+      "destination": "https://mercury.com/_next/:path*"
+    },
+    {
+      "source": "/videos/:path*",
+      "destination": "https://mercury.com/videos/:path*"
+    },
+    {
+      "source": "/_vercel/:path*",
+      "destination": "https://mercury.com/_vercel/:path*"
+    },
+    {
+      "source": "/favicon.ico",
+      "destination": "https://mercury.com/favicon.ico"
+    },
+    {
+      "source": "/apple-icon.png",
+      "destination": "https://mercury.com/apple-icon.png"
+    },
+    {
+      "source": "/icon.svg",
+      "destination": "https://mercury.com/icon.svg"
+    }
+  ]
+}
